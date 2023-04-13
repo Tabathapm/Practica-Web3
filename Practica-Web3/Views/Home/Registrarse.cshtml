@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Registro";
+}
+
+<div class="text-center">
+    <h1>Registrarse</h1>
+</div>
+
+<form action="registrarUsuario" method="post" modelAttribute="usuario" class="row">
+    <div class="input-group p-2 d-flex align-items-center col">
+        <input class="form-control" type="text" placeholder="Nombre" name="nombre">
+    </div>
+    <div class="input-group p-2 d-flex align-items-center col">
+        <input class="form-control" type="text" placeholder="Apellido" name="apellido">
+    </div>
+    <div class="input-group p-2 d-flex align-items-center">
+        <input class="form-control" type="text" placeholder="Nombre de Usuario" name="userName">
+    </div>
+    <div class="input-group p-2 d-flex align-items-center">
+        <input class="form-control" type="text" placeholder="Email" name="email">
+    </div>
+    <div class="input-group p-2 d-flex align-items-center">
+        <input class="form-control" type="password" placeholder="Password" name="password">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary w-100">Registrarme</button>
+</form>
